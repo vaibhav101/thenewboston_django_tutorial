@@ -11,7 +11,7 @@ class Album(models.Model):
     artist = models.CharField(max_length=200)
     album_title = models.CharField(max_length=200)
     genre = models.CharField(max_length=200)
-    album_logo = models.CharField(max_length=1000)
+    album_logo = models.FileField()
 
 
 class Song(models.Model):
